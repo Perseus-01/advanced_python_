@@ -8,6 +8,7 @@ with open("phonebook_raw.csv", encoding="utf-8") as f:
     rows = csv.reader(f, delimiter=",")
     contacts_list = list(rows)
 
+print(contacts_list)
 
 # 1. # Поместить Фамилию, Имя и Отчество человека в поля lastname, firstname и surname соответственно.
 # В записной книжке изначально может быть Ф + ИО, ФИО, а может быть сразу правильно: Ф+И+О.
@@ -22,7 +23,7 @@ def fix_columns(some_list):
             row[i] = temp_list[i]
     return some_list
 
-fix_columns(contacts_list)
+# fix_columns(contacts_list)
 
 # 2 # Привести все телефоны в формат +7(999)999-99-99.
 # Если есть добавочный номер, формат будет такой: +7(999)999-99-99 доб.9999.
@@ -36,7 +37,7 @@ def format_number(some_list):
 
   return some_list
 
-format_number(contacts_list)
+# format_number(contacts_list)
 
 
 # 3 # Объединить все дублирующиеся записи о человеке в одну.
@@ -45,7 +46,7 @@ format_number(contacts_list)
 # Ключом делайте ФИ и при добавлении очередного элемента (записи) делайте проверку на наличие ключа в словаре. 
 # Если ключ есть, то нужно объединить 2 записи, если нет, то добавляете новую в словарь.
 
-def merge_doubles(some_list):
+# def merge_doubles(some_list):
    
 
 

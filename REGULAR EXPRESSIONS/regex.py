@@ -23,7 +23,7 @@ def fix_columns(some_list):
             row[i] = temp_list[i]
     return some_list
 
-# fix_columns(contacts_list)
+fix_columns(contacts_list)
 
 # 2 # Привести все телефоны в формат +7(999)999-99-99.
 # Если есть добавочный номер, формат будет такой: +7(999)999-99-99 доб.9999.
@@ -37,7 +37,7 @@ def format_number(some_list):
 
   return some_list
 
-# format_number(contacts_list)
+format_number(contacts_list)
 
 
 # 3 # Объединить все дублирующиеся записи о человеке в одну.
@@ -47,7 +47,7 @@ def format_number(some_list):
 # Если ключ есть, то нужно объединить 2 записи, если нет, то добавляете новую в словарь.
 
 # def merge_doubles(some_list):
-   
+   #НЕ ЗНАЮ КАК ЭТО ДЕЛАТЬ - просьба подробно расписать по шагам.
 
 
 ## Сохраните получившиеся данные в другой файл.
